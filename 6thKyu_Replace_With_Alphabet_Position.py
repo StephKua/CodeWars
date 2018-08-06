@@ -13,6 +13,7 @@
 
 from string import ascii_lowercase
 from itertools import count
+
 def alphabet_position(text):
     letters = dict(zip(ascii_lowercase, count(1)))
     ans = [str(letters[t]) for t in text.lower() if t in letters]
