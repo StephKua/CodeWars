@@ -1,0 +1,13 @@
+# Return the number (count) of vowels in the given string.
+
+# We will consider a, e, i, o, and u as vowels for this Kata.
+
+# The input string will only consist of lower case letters and/or spaces.
+
+def getCount(inputStr):
+    num_vowels = 0
+    # your code here
+    
+    return sum([num_vowels+1 for a in inputStr if a in ['a','e','i','o','u']])
+
+assert getCount("o a kak ushakov lil vo kashu kakao") == 13
